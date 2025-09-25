@@ -14,4 +14,9 @@ for row in range (2,sheet.max_row +1):
                       max_row=sheet.max_row,
                       min_col=4,
                       max_col=4)
-    wb.save("transactions2.xlsx")
+chart=BarChart()
+chart.add_data(value)
+sheet.add_chart(chart ,"e2")
+
+
+wb.save("transactions2.xlsx")
